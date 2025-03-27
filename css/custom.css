@@ -69,14 +69,14 @@ h1 {
   letter-spacing: -0.01em;
 }
 */
-.md-content h1 {
-  font-size: 2rem ;
-  line-height: 1.6;
-  color: var(--md-typeset-color);
+h1 {
+  font-size: 2rem !important;
+  line-height: 1.6 !important;
+  color: var(--md-typeset-color) !important;
 }
 @media only screen and (max-width: 767px) {
-  .md-content h1 {
-    font-size: 1.5rem;
+  h1 {
+    font-size: 1.5rem !important;
   }
 }
 /*
@@ -88,16 +88,10 @@ h2 {
   letter-spacing: -0.01em;
 }
 */
-.md-content h2 {
-  font-size: 1.6rem;
-  line-height: 1.6;
-  color: var(--md-typeset-color);
-}
-@media only screen and (max-width: 767px) {
-  .md-content h2 {
-    font-size: 1.2rem;
-    color: var(--md-typeset-color);
-  }
+h2 {
+  margin: 0.4rem 0 0 0 !important;
+  font-size: 1.2rem !important;
+  color: var(--md-strong-color) !important;
 }
 /*
 h3 {
@@ -295,8 +289,8 @@ a {
   .md-content { 
     flex-grow: 1;
     min-width: 0;
-    margin-left: 0rem;
-    margin-right: 0rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
     margin-bottom: 8rem;
   }
 }
@@ -508,7 +502,7 @@ a {
   grid-template-columns: repeat(6, 1fr);
 }
 /* 小さい画面（400px以下）の場合は1カラムにする */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 767px) {
   .nt-cards.nt-grid {
       grid-template-columns: repeat(1, 1fr) !important;
   }
@@ -547,7 +541,7 @@ a {
 }
 /* カード内のタイトル */
 .nt-card-title {
-  font-size: 1.5em;
+  font-size: 1.6rem;
   margin: 0 !important;
   line-height: 2;
 }
