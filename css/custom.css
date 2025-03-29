@@ -289,6 +289,18 @@ a {
   }
 }
 /*
+.md-main__inner {
+  display: flex;
+  height: 100%;
+  margin-top: 1.5rem;
+}
+*/
+.md-main__inner {
+  display: flex;
+  height: 100%;
+  margin-top: 0.5rem;
+}
+/*
 .md-content {
   flex-grow: 1;
   min-width: 0;
@@ -353,7 +365,7 @@ a {
   background-color: #707070;
 }
 /* シェアボタン */
-.bdg-dark {
+.x-share {
   display: inline-block;
   margin: 0;
   padding: .35em .65em;
@@ -364,12 +376,12 @@ a {
   white-space: nowrap;
   vertical-align: baseline;
   border-radius: 0.25rem;
-  color: #FFFFFF;
-  background-color: #000000;
+  color: #070f26 !important;
+  background-color: #efefef;
 } 
-.bdg-dark:hover {
-  color: #FFFFFF;
-  background-color: #707070;
+.x-share:hover {
+  color: #070f26 !important;
+  background-color: #dcdcdc;
 }
 /* 注釈ディレクティブ */
 .margin-note {
