@@ -23,7 +23,7 @@
   --md-strong-color: #FFFFFF; /* 強調カラー*/ 
   --md-primary-fg-color: #070f26; /* ヘッダー */
   --md-typeset-a-color: #0068b7; /* リンクカラー */
-  --md-strong-accent-color: #0068b7; /* アクセントカラー */  
+  --md-strong-accent-color: #8bb6d6; /* アクセントカラー */  
   --md-accent-fg-color: #8bb6d6; /* アクセントカラー */
   --md-footer-bg-color--dark: #070f26; /* フッター */
   --md-footer-fg-color--light: var(--md-default-fg-color--light); /* フッターテキスト１ */
@@ -57,11 +57,12 @@ p {
 .md-content p {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
-  line-height: 2.4;
+  line-height: 2;
+  max-width: 38em;
 }
 /*
 h1 {
-  margin: 0 0 px2em(40px, 32px); margin: 0 0 1.25em; 上 右 下 左
+  margin: 0 0 px2em(40px, 32px); margin: 0 0 1.25em 0; 上 右 下 左
   font-size: px2em(32px);
   font-weight: 300;
   line-height: 1.3;
@@ -70,18 +71,19 @@ h1 {
 }
 */
 h1 {
+  margin: 0 0 1.6rem 0 !important;
   font-size: 2rem !important;
-  line-height: 1.6 !important;
+  line-height: 1.4 !important;
   color: var(--md-typeset-color) !important;
 }
 @media only screen and (max-width: 767px) {
   h1 {
-    font-size: 1.5rem !important;
+    font-size: 1.8rem !important;
   }
 }
 /*
 h2 {
-  margin: px2em(40px, 25px) 0 px2em(16px, 25px); margin: 1.6em 0 0.64em;
+  margin: px2em(40px, 25px) 0 px2em(16px, 25px); margin: 1.6em 0 0.64em 0;
   font-size: px2em(25px);
   font-weight: 300;
   line-height: 1.4;
@@ -89,9 +91,15 @@ h2 {
 }
 */
 h2 {
-  margin: 0.4rem 0 0 0 !important;
+  margin: 0 1.6rem 0 0 !important;
   font-size: 1.2rem !important;
-  color: var(--md-strong-color) !important;
+  line-height: 1.4 !important;
+  color: var(--md-typeset-color) !important;
+}
+@media only screen and (max-width: 767px) {
+  h2 {
+    font-size: 1rem !important;
+  }
 }
 /*
 h3 {
@@ -162,10 +170,11 @@ a {
 }
 */
 .link-line {
-  color: var(--md-strong-accent-color) !important;
+  margin: 1rem 0 1rem 0 !important;
+  color: var(--md-typeset-a-color) !important;
   text-decoration: underline;
-  text-underline-offset: 8px;
-  text-decoration-color: var(--md-strong-accent-color);
+  text-underline-offset: 12px;
+  text-decoration-color: var(--md-typeset-a-color);
   text-decoration-thickness: 1px;
   display: inline-flex; /* 矢印とテキストを横並びに */
   align-items: center; /* 垂直中央揃え */
@@ -177,7 +186,7 @@ a {
   transition: transform 0.3s ease; /* 矢印のアニメーション */
 }
 .link-line:hover {
-  color: var(--md-strong-accent-color) !important;
+  color: var(--md-typeset-a-colorr) !important;
   text-decoration: none; /* アンダーラインを消す */
 }
 .link-line:hover .arrow {
@@ -229,20 +238,17 @@ a {
 }
 /* インデント */
 .idt {
-  max-width: 38em;
   line-height: 2.4;
   margin: 0;
   text-indent:1em;
   }
 .hg-idt {
-  max-width: 38em;
   line-height: 2.4;
   margin: 0;
   padding-left:1em;
   text-indent:-1em;
   }
 .hg-idt2 {
-  max-width: 38em;
   line-height: 2.4;
   margin: 0;
   padding-left:2em;
@@ -272,6 +278,16 @@ a {
   text-indent:-1em;
   } 
 /* 画面調整 */
+.top-page { /* 画面余白調整 */
+  margin-right: 4rem !important;
+  margin-left: 4rem !important;
+}
+@media only screen and (max-width: 767px) {
+  .top-page { /* 画面余白調整 */
+    margin-right: 0.2rem !important;
+    margin-left: 0.2rem !important;
+  }
+}
 /*
 .md-content {
   flex-grow: 1;
@@ -279,20 +295,7 @@ a {
 }
 */
 .md-content { /* 画面余白調整 */
-  flex-grow: 1;
-  min-width: 0;
-  margin-left: 2rem;
-  margin-right: 2rem;
   margin-bottom: 8rem;
-}
-@media only screen and (max-width: 767px) {
-  .md-content { 
-    flex-grow: 1;
-    min-width: 0;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-    margin-bottom: 8rem;
-  }
 }
 /*
 .md-content__inner {
@@ -300,18 +303,20 @@ a {
   padding-top: .6rem;
 }
 */
-.md-content__inner {  /* 画面余白調整 */
-  margin: 0;
-  padding-top: 0;
+.md-content__inner {
+  padding-top: 0rem;
 }
 .md-tabs__link:hover { /* タブのホバー時の下線 */
   color: var(--md-typeset-color) ;
   text-decoration: underline;
-  text-underline-offset: 8px;
-  text-decoration-color: var(--md-strong-accent-color);
+  text-underline-offset: 12px;
+  text-decoration-color: var(--md-typeset-a-color);
 }
 .md-tabs__item--active .md-tabs__link { /* タブのアクティブ色 */
-  color: var(--md-strong-accent-color) ;
+  color: var(--md-typeset-a-color) ;
+  text-decoration: underline;
+  text-underline-offset: 12px;
+  text-decoration-color: var(--md-typeset-a-color);
 }
 .md-sidebar__inner { /* サイドバーの横スクロールを隠す */
   overflow: hidden;
@@ -321,9 +326,13 @@ a {
   scrollbar-width: 1px;
 }
 /* サイドバーのホバーとアクティブを太字 */
+.md-nav__link {
+  font-weight: 400;
+}
 .md-nav__link--active, 
 .md-nav__link--active:hover {
-  color: var(--md-strong-accent-color) ;
+  color: var(--md-typeset-a-color) ;
+  font-weight: 400;
 }
 /* リンクボタン */
 .links {
@@ -337,11 +346,11 @@ a {
   vertical-align: baseline;
   border-radius: 0.75rem;
   color: #2E404d !important;
-  background-color: #efefef;
+  background-color: #efefef ;
 } 
 .links:hover {
-  color: #2E404d !important;
-  background-color: #e0e0e0;
+  color: #2E404d  !important;
+  background-color: #707070;
 }
 /* シェアボタン */
 .bdg-dark {
@@ -359,8 +368,8 @@ a {
   background-color: #000000;
 } 
 .bdg-dark:hover {
-  background-color: #707070;
   color: #FFFFFF;
+  background-color: #707070;
 }
 /* 注釈ディレクティブ */
 .margin-note {
@@ -537,13 +546,11 @@ a {
 }
 .nt-card :hover,
 .nt-card :focus {
-  color: var(--md-strong-accent-color) !important;
+  color: var(--md-typeset-a-color) !important;
 }
 /* カード内のタイトル */
 .nt-card-title {
-  font-size: 1.6rem;
   margin: 0 !important;
-  line-height: 2;
 }
 /* カードのコンテンツ */
 .nt-card-content {
