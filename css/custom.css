@@ -84,7 +84,7 @@ h2 {
 }
 */
 h2 {
-  margin: 4rem 0 0.64rem 0 !important;
+  margin: 4rem 0 1.2rem 0 !important;
   font-size: 1.6rem !important;
   line-height: 1.4 !important;
   color: var(--md-typeset-color) !important;
@@ -99,7 +99,7 @@ h2:after {
 }
 /* md-post__content 内の h2 に対して h2:after を無効にする */
 .md-post__content h2 {
-  margin: 0 0 0.64rem 0 !important;
+  margin: 0 0 1.2rem 0 !important;
 }
 .md-post__content h2:after {
   content: none; /* 横線を無効化 */
@@ -117,13 +117,13 @@ h2 + h3 {
 }
 */
 h3 {
-  margin: 4rem 0 0.64rem 0 !important;
+  margin: 4rem 0 1.2rem 0 !important;
   font-size: 1.2rem !important;
   line-height: 1.4 !important;
   color: var(--md-typeset-color) !important;
 }
 h2 + h3 {
-  margin-top: 1rem !important;
+  margin-top: 1.2rem !important;
 }
 /* カードテキスト */
 .card-text-center {
