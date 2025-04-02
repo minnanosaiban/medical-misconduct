@@ -52,7 +52,11 @@ p {
 }
 strong em {
   color: var(--red-color) !important;
-  font-style: normal;
+  font-style: 400;
+}
+strong {
+  color: var(--md-strong-color) !important;
+  font-style: 700;
 }
 /*
 h1 {
@@ -443,7 +447,7 @@ a {
 .margin-note {
   float: right ;
   width: 12.1rem;
-  font-size: 0.8rem;
+  font-size: 0.6rem !important;
   line-height: 1.5;
 }
 @media only screen and (max-width: 767px) {
