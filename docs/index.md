@@ -1,5 +1,5 @@
 ---
-title: 悪用されるリハビリテーションのしくみ
+title: 悪用されるリハビリ医療のしくみ
 description: 厚生労働省へ公益通報した原告、通報者に対する不利益取扱いが認められ勝訴しました。日本の医療は社会保険料という国民の負担によって支えられています。診療報酬の不正請求の実態を明らかにし、国民に説明するとともに不正防止と制度改革のための情報発信を行ってまいります。
 # date: 2023-03-06
 # categories:
@@ -24,7 +24,7 @@ icon: material/home
 ---
 
 <p class="top-page" style="margin: 0;">
-  <a href="https://twitter.com/share?url=https://minnanosaiban.github.io/medical-misconduct/ &text=悪用されるリハビリテーションのしくみ"
+  <a href="https://twitter.com/share?url=https://minnanosaiban.github.io/medical-misconduct/ &text=悪用されるリハビリ医療のしくみ"
      target="_blank" class="x-share" style="color: #FFFFFF;">
     <i class="fa-brands fa-x-twitter"></i> でシェア
   </a>
@@ -67,3 +67,5 @@ icon: material/home
     </a>
 </div>
 
+
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/d4e18f18d88048e8a31fb25dc85f2be4" title="医療の問題点" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe>

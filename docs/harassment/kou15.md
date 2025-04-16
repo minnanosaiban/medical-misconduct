@@ -24,7 +24,7 @@ hide:
 ---
 
 <p style="margin: 0;">
-  <a href="https://twitter.com/share?url=https://minnanosaiban.github.io/medical-misconduct/harassment/kou15/ &text=甲15　パワハラの録音反訳 - 悪用されるリハビリテーションのしくみ"
+  <a href="https://twitter.com/share?url=https://minnanosaiban.github.io/medical-misconduct/harassment/kou15/ &text=甲15　パワハラの録音反訳 - 悪用されるリハビリ医療のしくみ"
      target="_blank" class="x-share" style="color: #FFFFFF;">
     <i class="fa-brands fa-x-twitter"></i> でシェア
   </a>

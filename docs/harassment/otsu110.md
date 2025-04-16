@@ -24,7 +24,7 @@ hide:
 ---
 
 <p style="margin: 0;">
-  <a href="https://twitter.com/share?url=https://minnanosaiban.github.io/medical-misconduct/harassment/otsu110/ &text=乙110　院内の報告書 - 悪用されるリハビリテーションのしくみ"
+  <a href="https://twitter.com/share?url=https://minnanosaiban.github.io/medical-misconduct/harassment/otsu110/ &text=乙110　院内の報告書 - 悪用されるリハビリ医療のしくみ"
      target="_blank" class="x-share" style="color: #FFFFFF;">
     <i class="fa-brands fa-x-twitter"></i> でシェア
   </a>
