@@ -69,7 +69,7 @@ h1 {
 }
 */
 h1 {
-  font-size: 2rem !important;
+  font-size: 2.4rem !important;
   line-height: 1.4 !important;
   color: var(--md-typeset-color) !important;
 }
@@ -88,7 +88,7 @@ h2 {
 }
 */
 h2 {
-  margin: 4rem 0 1.2rem 0 !important;
+  margin: 8rem 0 1.2rem 0 !important;
   font-size: 1.6rem !important;
   line-height: 1.4 !important;
   color: var(--md-typeset-color) !important;
@@ -650,4 +650,29 @@ a {
 .nt-card .nt-card-image img {
   height: 105px;
   margin-top: 5px;
+}
+
+/* プレイヤーを囲む枠線の設定 */
+.custom-audio-card {
+    background-color: #ffffff; /* 背景色 */
+    border: 2px solid #3f51b5; /* 枠線の色（Materialテーマに合わせた色） */
+    border-radius: 12px;       /* 角丸 */
+    padding: 20px;            /* 中の余白 */
+    margin: 80px 0;           /* 外側の上下余白 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 軽い影 */
+}
+
+/* ラベルテキストのデザイン */
+.audio-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 0.9em;
+}
+
+/* スマホ対応：Plyr自体の幅を100%に */
+.plyr {
+    width: 100%;
+    min-width: 200px; /* 極端に狭くなっても崩れないように */
 }
