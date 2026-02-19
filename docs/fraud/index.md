@@ -34,6 +34,30 @@ hide:
 
 <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/d4e18f18d88048e8a31fb25dc85f2be4" title="医療の問題点" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe>
 
+
+## わかる！動画で診療報酬不正受給
+
+<div class="custom-audio-card">
+  <span class="video-label">📺 動画解説を再生</span>
+  <div class="plyr-container">
+    <video id="video-player" playsinline controls>
+      <source src="../assets/audio/video.mp4" type="video/mp4" />
+      Your browser does not support the video element.
+    </video>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // 動画プレイヤーを初期化
+    const videoPlayer = new Plyr('#video-player', {
+      // 必要に応じてオプションを追加
+      aspectRatio: '16:9'
+    });
+  });
+</script>
+
+
 <div class="left-doc" markdown>
 
 ## 医療の透明性を求めて
